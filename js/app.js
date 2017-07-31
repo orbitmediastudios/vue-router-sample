@@ -6,18 +6,21 @@ const List = {
     template: '#list-template',
     data: () => ({
         posts: [],
-        search: ""
+        search: "",
+        loading: true
     }),
     mounted() {
         this.getPosts();
     },
     methods: {
         getPosts(){
+            this.loading = true;
             axios.get(baseUrl + `photos`).then(response => {
                 this.posts = response.data
+                this.loading = false;
             }).catch(error => {
                 console.log(error);
-            })
+            });
         }
     },
     computed: {
