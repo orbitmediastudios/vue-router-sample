@@ -12,7 +12,7 @@
 </div>
 <template id="list-template">
     <div class="panel panel-default">
-        <div class="panel-heading">AJAX call result</div>
+        <div class="panel-heading">AJAX call result <i v-show="loading">...Loading posts...</i></div>
         <div class="panel-body">
             <p>
                 <input v-model="search" placeholder="Enter search terms" >
