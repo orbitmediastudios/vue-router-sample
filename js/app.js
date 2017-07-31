@@ -7,7 +7,7 @@ const List = {
     data: () => ({
         posts: [],
         search: "",
-        loading: true
+        loading: false
     }),
     mounted() {
         this.getPosts();
