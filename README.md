@@ -1,5 +1,6 @@
 # vue-router-sample
-### vue router sample code collected from internet ###
+## vue router sample code collected from internet ##
+### based on: https://medium.com/front-end-hacking/getting-started-with-modern-front-end-development-with-vue-js-1cc7b120a0e3 ###
 
 Run php internal server:
 $php -S localhost:8000 router.php   
